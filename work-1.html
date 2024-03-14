@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="WEBデザイナー「EMU」のWEBサイトです。">
+    <title>EMU</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- フォント読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Junge&family=Kosugi&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- ファビコン読み込み -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- 表示領域の横幅を合わせる -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html"><img class="logo" src="images/android-chrome-192x192.png" alt="EMU"></a></h1>
+        <nav>
+            <ul class="menu-lists">
+                <li class="menu-list"><a href="index.html">home</a></li>
+                <li class="menu-list"><a href="index.html#about">about</a></li>
+                <li class="menu-list"><a href="index.html#service">service</a></li>
+                <li class="menu-list"><a href="index.html#works">works</a></li>
+                <li class="menu-list"><a href="index.html#contact">contact</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- モバイルver.のメニュー -->
+        <nav id="sp-navi">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input">
+              <img class="sp-navi-open" src="images/menuicon_open.png" alt="メニュー開く">
+            </label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="sp-navi-in">
+              <label class="sp-navi-close-button" for="nav-input">
+              <img class="sp-navi-close" src="images/menuicon_close.png" alt="メニュー閉じる"></label>
+              <div class="sp-navi-inner">
+                <ul class="sp-navi__navi">
+                    <li>
+                    <a href="index.html">home</a>
+                    </li>
+                    <li>
+                        <a href="index.html#about">about</a>
+                    </li>
+                    <li>
+                        <a href="index.html#service">service</a>
+                    </li>
+                    <li>
+                        <a href="index.html#works">works</a>
+                    <li>
+                        <a href="index.html#contact">contact</a>
+                    </li>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+</header>
+     <!-- work-wrapper-->
+     <div class="work-wrapper">
+
+<!-- worksへ戻る -->
+<div class="works-return">
+    <a href="index.html#works">＜ WORKSへ戻る</a>
+</div>
+
+        <h2 class="work-title" style="text-align:center">「近藤クッキング」サイトデザイン</h2>
+        <img class="work-topimage" src="images/work1-top.png" alt="近藤クッキングのWEBサイトのイメージ">
+    
+
+        <div class="work-sentence">
+            <table>
+                <tr>
+                  <th class="sentence-title">制作目的</th>
+                  <td><p>"「おいしい」という幸せを作るお手伝いをします。"
+                    がキャッチコピーの、架空の料理教室のWEBサイトを制作すること。
+                </p></td>
+                </tr>
+                <tr>
+                    <th class="sentence-title">ターゲット</th>
+                    <td><p>
+                        <ul class="sentence-point">
+                            <li>30～40代の女性</li>
+                            <li>料理のレパートリーを増やしたい人</li>
+                            <li>質の高い講師から料理を勉強したい人</li>
+                          </ul>
+                    </p></td>
+                </tr>
+                <th class="sentence-title">工夫点</th>
+                <td><p>ターゲットに親しみやすく柔らかい印象を持ってもらえるよう、
+                    色味は癖のないブラウンとベージュで統一しました。
+                    また、どのような教室であるかを短時間で認識してもらうために、
+                    トップページの写真は横幅いっぱいに広げて視覚的な印象付けを行い、
+                    アピールポイントはすぐ目に入るようページ上部に記載しました。
+              </p></td>
+                </tr>
+                <th class="sentence-title">制作期間</th>
+                <td><p>１ヶ月</p></td>
+                </tr>
+                <th class="sentence-title">制作人数</th>
+                <td><p>１人</p></td>
+                </tr>
+                <th class="sentence-title">使用ツール</th>
+                <td><p>Wix/Figma/IllustStudio</p></td>
+                </tr>
+        </table>
+        </div>
+
+
+        <div class="screenshot">
+            <img src="images/work1.png" alt="近藤クッキングのWEBサイトのトップページ">
+        </div>
+
+        <div class="site-url">
+            <button name="button" onclick="window.open('https://saito8175.wixsite.com/portfolio-cooking')">VISIT WEBSITE</button>
+        </div>
+
+        <div class="works-return">
+            <a href="index.html#works">＜ WORKSへ戻る</a>
+        </div>
+    </div><!-- work-wrapper-->
+
+
+    <footer><!-- footer -->
+        <a id="to-top" href="#"></a>
+        <div class="copyright">© EMU 2024</div>
+    </footer><!-- footer -->
+
+</body>
+</html>

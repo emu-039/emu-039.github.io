@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="WEBデザイナー「EMU」のWEBサイトです。">
+    <title>EMU</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- フォント読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Junge&family=Kosugi&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- ファビコン読み込み -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- 表示領域の横幅を合わせる -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html"><img class="logo" src="images/android-chrome-192x192.png" alt="EMU"></a></h1>
+        <nav>
+            <ul class="menu-lists">
+                <li class="menu-list"><a href="#">home</a></li>
+                <li class="menu-list"><a href="#about">about</a></li>
+                <li class="menu-list"><a href="#service">service</a></li>
+                <li class="menu-list"><a href="#works">works</a></li>
+                <li class="menu-list"><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- モバイルver.のメニュー -->
+        <nav id="sp-navi">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input">
+              <img class="sp-navi-open" src="images/menuicon_open.png" alt="メニュー開く">
+            </label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="sp-navi-in">
+              <label class="sp-navi-close-button" for="nav-input">
+              <img class="sp-navi-close" src="images/menuicon_close.png" alt="メニュー閉じる"></label>
+              <div class="sp-navi-inner">
+                <ul class="sp-navi__navi">
+                    <li>
+                    <a href="#">home</a>
+                    </li>
+                    <li>
+                        <a href="#about">about</a>
+                    </li>
+                    <li>
+                        <a href="#service">service</a>
+                    </li>
+                    <li>
+                        <a href="#works">works</a>
+                    <li>
+                        <a href="#contact">contact</a>
+                    </li>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+    </header>
+
+    <!-- メインビジュアル -->
+     <div class="mainvisual"></div>
+
+     <!-- about-->
+    <div id="about" class="wrapper">
+        <h2 class="title jump_point" style="text-align:center">about</h2>
+        <div class="image-wrapper fade">
+            <div class="image-logo">
+                <img src="images/open_logo.png" alt="イメージ">
+            </div>
+            <div class="image-message-wrapper">
+                <!-- デスクトップ用画像 -->
+                <img class="image-message-desk" src="images/About_message.png" alt="挨拶メッセージ">
+                <!-- モバイル用画像 -->
+                <img class="image-message-mobile" src="images/About_message_small.png" alt="イメージ">
+                    <div class="about-sentence">
+                        <p>クライアント様のご要望を最大限吸収しつつ、<br>
+                            サイトを見て下さるお客様の視点に立ってのデザイン作りを大切にしております。
+                        </p>
+                    </div>
+            </div>
+
+        </div><!-- /.image-wrapper -->
+    </div><!-- #about -->
+
+
+     <!-- service-->
+    <div id="service" class="wrapper">
+        <h2 class="title" style="text-align:center">service</h2>
+        <div class="grid fade">
+            <div class="service-item">
+                <img src="images/service_display.png" alt="HP制作のイメージ">
+                <p>HP制作</p>
+            </div>
+            <div class="service-item">
+                <img src="images/service_flag.png" alt="バナー制作のイメージ">
+                <p>バナー制作</p>
+            </div>
+            <div class="service-item">
+                <img src="images/service_person.png" alt="ロゴ・アイコン制作のイメージ">
+                <p>ロゴ・アイコン制作</p>
+            </div>
+        </div>
+        <div class="toolsused-sentence">
+            <p>＊使用可能ツール<br>
+                WIX/wordpress/figma/IllustStudio</p>
+        </div>
+     </div><!-- #service -->
+
+
+     <!-- works -->
+    <div id="works" class="wrapper">
+        <h2 class="title" style="text-align:center">works</h2>
+        <div class="grid fade">
+            <div class="works-item">
+                <a href="work-1.html"><img src="images/portfolio_image1.png" alt="制作実績のイメージ">
+                <p>料理教室「近藤クッキング」のWEBサイト</p></a>
+            </div>
+            <div class="works-item">
+                <a href="work-2.html">
+                <img src="images/portfolio_image2.png" alt="制作実績のイメージ">
+                <p>チョコレート専門の洋菓子店「Bruges」のWEBサイト</p></a>
+            </div>
+            <div class="works-item">
+                <a href="work-1.html">
+                <img src="images/portfolio_image1.png" alt="制作実績のイメージ">
+                <p>ロゴ・アイコン制作</p></a>
+            </div>
+        </div>
+     </div> <!-- #works -->
+
+
+
+    <!-- contact -->
+    <div id="contact" class="wrapper">
+        <h2 class="title" style="text-align:center">contact</h2>
+        <script src="https://sdk.form.run/js/v2/embed.js"></script>
+        <div
+          class="formrun-embed"
+          data-formrun-form="@saito--mk4FLlwAd2LXcy8b71Rz"
+          data-formrun-redirect="true">
+        </div>
+    </div><!-- contact -->
+
+
+
+<footer><!-- footer -->
+    <a id="to-top" href="#"></a>
+    <div class="copyright">© EMU 2024</div>
+</footer><!-- footer -->
+
+</body>
+</html>
