@@ -59,11 +59,64 @@ $(function(){
   
     // クリックイベント（ボタンがクリックされた際に実行）
     pagetop.click(function() {
-      // 0.5秒かけてページトップへ移動
-      $('body,html').animate({scrollTop: 0}, 500);
+      // 0.8秒かけてページトップへ移動
+      $('body,html').animate({scrollTop: 0}, 800);
   
       // イベントが親要素へ伝播しないための記述
       // ※詳しく知りたい方は「イベント　バブリング」または「jQuery バブリング」で調べてみてください
       return false;
     });
+
+    /* index内のスムーススクロール
+    =================================================== */
+    const scorrllLinks = document.querySelectorAll('a[href^="#"]');
+    scorrllLinks.forEach((scorrllLink) => {
+      scorrllLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        const hrefLink = scorrllLink.getAttribute("href");
+        const targetContent = document.getElementById(hrefLink.replace("#", ""));
+        const rectTop = targetContent.getBoundingClientRect().top;
+        const positionY = window.pageYOffset;
+        const target = rectTop + positionY;
+        window.scrollTo({
+          top: target,
+          behavior: "smooth",
+        });
+      });
+    });
+
+
+    /* 別ページからのindexのスムーススクロール
+    ===================================================*/
+    $(function(){
+      //現在のページURLのハッシュ部分を取得
+      const hash = location.hash;
+    
+      //ハッシュ部分がある場合の条件分岐
+      if(hash){
+        //ページ遷移後のスクロール位置指定
+        $("html, body").stop().scrollTop(0);
+        //処理を遅らせる
+        setTimeout(function(){
+          //リンク先を取得
+          const target = $(hash),
+          //リンク先までの距離を取得
+          position = target.offset().top;
+          //指定の場所までスムーススクロール
+          $("html, body").animate({scrollTop:position}, 800, "swing");
+        });
+      }
+    });
+
+
+
+
+
+
+
+
+
+
+
+
   });

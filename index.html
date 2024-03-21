@@ -30,20 +30,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
-<body>
+<body id="bodytop">
 
     <header>
         <h1><a href="index.html"><img class="logo" src="images/android-chrome-192x192.png" alt="EMU"></a></h1>
         <nav>
             <ul class="menu-lists">
-                <li class="menu-list"><a href="#">home</a></li>
+                <li class="menu-list"><a href="#bodytop">home</a></li>
                 <li class="menu-list"><a href="#about">about</a></li>
                 <li class="menu-list"><a href="#service">service</a></li>
                 <li class="menu-list"><a href="#works">works</a></li>
                 <li class="menu-list"><a href="#contact">contact</a></li>
             </ul>
         </nav>
-
 
         <!-- モバイルver.のメニュー -->
         <nav id="sp-navi">
@@ -58,7 +57,7 @@
               <div class="sp-navi-inner">
                 <ul class="sp-navi__navi">
                     <li>
-                    <a href="#">home</a>
+                    <a href="#bodytop">home</a>
                     </li>
                     <li>
                         <a href="#about">about</a>
@@ -81,25 +80,49 @@
     </header>
 
     <!-- メインビジュアル -->
-     <div class="mainvisual"></div>
+    <div class="mainvisual-small-wrapper">
+     <img class="mainvisual-small" src="images/mainvisual_small.png" alt="トップ画面">
+     <img class="mainvisual-small-message" src="images/mainvisual_messages_small.png" alt="トップ画面">
+    </div>
+
+    <div class="mainvisual-wrapper">
+     <img class="mainvisual" src="images/mainvisual.png" alt="トップ画面">
+     <img class="mainvisual-message" src="images/mainvisual_messages.png" alt="トップ画面">
+    </div>
 
      <!-- about-->
     <section id="about" class="wrapper">
-        <h2 class="title jump_point" style="text-align:center">about</h2>
+        <h2 class="title" style="text-align:center">about</h2>
         <div class="image-wrapper fade">
-            <div class="image-logo">
-                <img src="images/open_logo.png" alt="イメージ">
+            <div>
+                <img class="image-logo" src="images/open_logo.png" alt="イメージ">
             </div>
             <div class="image-message-wrapper">
                 <!-- デスクトップ用画像 -->
                 <img class="image-message-desk" src="images/About_message.png" alt="挨拶メッセージ">
                 <!-- モバイル用画像 -->
                 <img class="image-message-mobile" src="images/About_message_small.png" alt="イメージ">
-                    <div class="about-sentence">
-                        <p>クライアント様のご要望を最大限吸収しつつ、<br>
-                            サイトを見て下さるお客様の視点に立ってのデザイン作りを大切にしております。
-                        </p>
-                    </div>
+
+                    <table class="about-sentence">
+                        <tr>
+                        <th>お仕事</th>
+                        <td>
+                            <h3 class="about-sentence-title">WEBデザイナー</h3>
+                            <p>クライアント様のご要望を最大限吸収しつつ、サイトを見て下さるお客様の視点に立ってのデザイン作りを大切にしております。
+                            </p>
+                        </td>
+                        </tr>
+                        <th>スキル</th>
+                        <td><p>HTML / CSS / Wix / WordPress / Figma / IllustStudio
+                        </p></td>
+                        </tr>
+                        <th>趣味</th>
+                        <td><p>ゲーム制作、写真撮影を時折楽しんでおります。好きを極めて、WEBデザインにも活用できるスキルを身に付けたいです。
+                        </p></td>
+                        </tr>
+
+                </table>
+
             </div>
 
         </div><!-- /.image-wrapper -->
@@ -123,10 +146,6 @@
                 <p>ロゴ・アイコン制作</p>
             </div>
         </div>
-        <div class="toolsused-sentence">
-            <p>＊使用可能ツール<br>
-                WIX/wordpress/figma/IllustStudio</p>
-        </div>
     </section><!-- #service -->
 
 
@@ -144,7 +163,7 @@
                 <p>チョコレート専門の洋菓子店「Bruges」のWEBサイト制作</p></a>
             </div>
             <div class="works-item">
-                <!--<a href="work-1.html">-->
+                <a href="work-3.html">
                 <img src="images/portfolio_image3.png" alt="制作実績のイメージ">
                 <p>写真展「The Cool World」のWEBサイト制作</p></a>
             </div>
