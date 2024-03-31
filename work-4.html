@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="WEBデザイナー「EMU」のWEBサイトです。">
+    <title>EMU</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- フォント読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Junge&family=Kosugi&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- ファビコン読み込み -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- 表示領域の横幅を合わせる -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 画像選択で、拡大した画像を表示する -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html"><img class="logo" src="images/android-chrome-192x192.png" alt="EMU"></a></h1>
+        <nav>
+            <ul class="menu-lists">
+                <li class="menu-list"><a href="index.html#">home</a></li>
+                <li class="menu-list"><a href="index.html#about">about</a></li>
+                <li class="menu-list"><a href="index.html#service">service</a></li>
+                <li class="menu-list"><a href="index.html#works">works</a></li>
+                <li class="menu-list"><a href="index.html#contact">contact</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- モバイルver.のメニュー -->
+        <nav id="sp-navi">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input">
+              <img class="sp-navi-open" src="images/menuicon_open.png" alt="メニュー開く">
+            </label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="sp-navi-in">
+              <label class="sp-navi-close-button" for="nav-input">
+              <img class="sp-navi-close" src="images/menuicon_close.png" alt="メニュー閉じる"></label>
+              <div class="sp-navi-inner">
+                <ul class="sp-navi__navi">
+                    <li>
+                    <a href="index.html">home</a>
+                    </li>
+                    <li>
+                        <a href="index.html#about">about</a>
+                    </li>
+                    <li>
+                        <a href="index.html#service">service</a>
+                    </li>
+                    <li>
+                        <a href="index.html#works">works</a>
+                    <li>
+                        <a href="index.html#contact">contact</a>
+                    </li>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+</header>
+     <!-- work-wrapper-->
+     <div class="work-wrapper">
+
+<!-- worksへ戻る -->
+<div class="works-return">
+    <a href="index.html#works">＜ WORKSへ戻る</a>
+</div>
+
+        <div class="work-title-wrapper">
+            <h2 class="work-title">「すべさら」のバナー制作</h2>
+        </div>
+        <a href="images/work4-top.png" data-lightbox="group"><img class="work-topimage" src="images/work4-top.png" width="300" alt="「すべさら」のバナーのイメージ"></a>
+        <div class="work-sentence">
+            <table>
+                <tr>
+                  <th class="sentence-title">概要</th>
+                  <td><p>架空の脱毛サロン「すべさら」にて、新規顧客獲得に向けたサービスを提供することになり、その宣伝のためバナーを制作しました。サイズは300×250です。※画像をクリックすると、拡大した画像が表示されます。
+                </p></td>
+                </tr>
+                <tr>
+                    <th class="sentence-title">ターゲット</th>
+                    <td><p>
+                        <ul class="sentence-point">
+                            <li>20～40代女性</li>
+                            <li>脱毛に興味がある人</li>
+                            <li>美意識が高い人</li>
+                          </ul>
+                    </p></td>
+                </tr>
+                <th class="sentence-title">工夫点</th>
+                <td><p>女性向け、かつ、春に提供するサービスを意識し、ベージュと淡いピンクをメインとした華やかなデザインにしました。また、写真モデルには美しい肌を露出した女性を選択し、脱毛サービスを提供していることを視覚的にアピールしております。
+              </p></td>
+                </tr>
+                <th class="sentence-title">制作期間</th>
+                <td><p>２日間</p></td>
+                </tr>
+                <th class="sentence-title">制作人数</th>
+                <td><p>１人</p></td>
+                </tr>
+                <th class="sentence-title">使用ツール</th>
+                <td><p>Illustrator</p></td>
+                </tr>
+        </table>
+        </div>
+
+        <div class="works-return">
+            <a href="index.html#works">＜ WORKSへ戻る</a>
+        </div>
+    </div><!-- work-wrapper-->
+
+
+    <footer><!-- footer -->
+        <a id="to-top" href="#"></a>
+        <div class="copyright">© EMU 2024</div>
+    </footer><!-- footer -->
+
+</body>
+</html>
